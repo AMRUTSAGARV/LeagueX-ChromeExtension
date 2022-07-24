@@ -6,6 +6,7 @@ import Signin from "./pages/Signin";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import { AuthContextProvider } from "./context/AuthContext";
+import Protected from "./components/Protected";
 
 function App() {
   return (
@@ -15,7 +16,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<Signin />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route
+            path="/profile"
+            element={
+              <Protected>
+                <Profile />
+              </Protected>
+            }
+          />
         </Routes>
       </AuthContextProvider>
     </div>
