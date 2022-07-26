@@ -8,32 +8,64 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
 </head>
-<body>
-    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-    <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-    <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-    
-    <div id="Home" class="tabcontent">
-      <h3>Home</h3>
-      <p>Home is where the heart is..</p>
-    </div>
-    
-    <div id="News" class="tabcontent">
-      <h3>News</h3>
-      <p>Some news this fine day!</p>
-    </div>
-    
-    <div id="Contact" class="tabcontent">
-      <h3>Contact</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
-    
-    <div id="About" class="tabcontent">
-      <h3>About</h3>
-      <p>Who we are and what we do.</p>
-    </div>
+<body class="container">
+  <div class="widget">
+    <ol class="widget-list" id="cartitem">
+      <li>
+        <a class="widget-list-link">
+          <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOAARNATO-MEN-AARN6424471269E1B1/1564572063597_0..jpg">
+         <strong> Product 1</strong> <span><strong>Price : 2$</strong></span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOAARNATO-MEN-AARN6424471269E1B1/1564572063597_0..jpg">
+          <strong>Product 2</strong> <span><strong>Price : 2$</strong></span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOAARNATO-MEN-AARN6424471269E1B1/1564572063597_0..jpg">
+          <strong>Product 3</strong> <span><strong>Price : 2$</strong></span>
+        </a>
+      </li>
+    </ol>
+  
+    <ol class="widget-list" id="myprofile">
+      <li>
+        <a class="widget-list-link">
+         
+          User Name <span><h6><strong>Barath</strong></h6></span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          Email Id <span><h6><strong>barath@gmail.com</strong></h6></span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          Phone No <span><h6><strong>+91 8757817865</strong></h6></span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          Location <span><h6><strong>Chennai</strong></h6></span>
+        </a>
+      </li>
+    </ol>
+  
+
+  
+    <ul class="widget-tabs">
+      <li class="widget-tab">
+        <a href="#cartitem" class="widget-tab-link">Cart Item</a>
+        <!-- Omitting the end tag is valid HTML and removes the space in-between inline blocks. -->
+      <li class="widget-tab">
+        <a href="#myprofile" class="widget-tab-link">My Profile</a>
+     
+  </div>
       
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
