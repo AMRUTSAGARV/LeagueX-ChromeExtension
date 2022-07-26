@@ -7,6 +7,9 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import { AuthContextProvider } from "./context/AuthContext";
 import Protected from "./components/Protected";
+import Main from "./components/Main";
+import Cart from "./components/Cart";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -14,7 +17,7 @@ function App() {
       <AuthContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Main />} />
           <Route path="/signin" element={<Signin />} />
           <Route
             path="/profile"
@@ -24,6 +27,7 @@ function App() {
               </Protected>
             }
           />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </AuthContextProvider>
     </div>
